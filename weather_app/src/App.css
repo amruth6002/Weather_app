@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:  "Ubuntu", sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 70%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0072ff;
+  color: #9fbed9;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.weather-info, .forecast, .recent-locations {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.weather-info h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.weather-icon {
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.forecast-icon {
+  font-size: 2em;
+}
+
+.recent-locations ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-locations li {
+  cursor: pointer;
+  margin: 5px 0;
+  color: #00c6ff;
+  transition: color 0.3s ease;
+}
+
+.recent-locations li:hover {
+  color: #005bb5;
+}
+
+.recent-locations h3 {
+  margin-top: 0;
+}
